@@ -1,0 +1,114 @@
+/* Fonts */
+@font-face {
+  font-family: 'Golos-Text';
+  src: url('./assets/fonts/Golos-Text_Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Golos-Text';
+  src: url('./assets/fonts/Golos-Text_Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Golos-Text';
+  src: url('./assets/fonts/Golos-Text_DemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Golos-Text';
+  src: url('./assets/fonts/Golos-Text_Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fonts Fallback */
+@font-face {
+  font-family: 'Golos-Text2';
+  src: url('./assets/fonts/Golos-Text_Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Golos-Text2';
+  src: url('./assets/fonts/Golos-Text_Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Golos-Text2';
+  src: url('./assets/fonts/Golos-Text_DemiBold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Golos-Text2';
+  src: url('./assets/fonts/Golos-Text_Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+:root{
+  --main-bg: white;
+  --card-bg: #e8eef4;
+  --glass-bg: rgba(217,217,217, .99);
+  --header-col: rgba(0,0,0, .6);
+  --text-col: black;
+  --green: #0bbc5c;
+  --orange: #ff5b38;
+  --yellow: #E6EB0F;
+  --text-fz: 16px;
+  --card-shadow: 0px 0px 8px 4px rgba(0,0,0,0.1);
+  --btn-icon-fill: rgba(256,256,256, .7);
+  --btn-text: white;
+}
+
+[data-theme = 'dark']{
+  --main-bg: #191d27;
+  --header-col: rgba(255,255,255, .9);
+  --card-bg: #212b33;
+  --text-col: white;
+  --orange: #f7e01d;
+  --btn-icon-fill: rgba(0,0,0, .7);
+  --btn-text: black;
+  
+}
+/* 393a3e */
+/* 212b33 */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)){
+  :root{
+    --glass-bg: rgba(217,217,217, .8);
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  font-family: 'Golos-Text', 'Golos-Text2', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-col);
+  font-size: var(--text-fz);
+  background: var(--main-bg);
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-col);
+}
+

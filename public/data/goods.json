@@ -1,0 +1,357 @@
+[
+ 
+    {
+        "articul": "0001",
+        "category": "kratom",
+        "name": "Чай Кратом Thai Green Зелений",
+        "popular": true,
+        "size": "50",
+        "price": "270",
+        "image": "images/ivan-chai.webp",
+        "similar": ["0002", "0004", "0006", "0008"]
+        
+    },
+    {
+        "articul": "0002",
+        "category": "kratom", 
+        "name": "Чай Кратом Thai Green Зелений",
+        "size": "100",
+        "price": "510",
+        "image": "images/ivan-lavanda.jpg",
+        "similar": ["0001", "0004", "0006", "0008"]
+    },
+    {
+        "articul": "0003",
+        "category": "herbs",
+        "name": "Листя Липи",
+        "size": "300",
+        "price": "100",
+        "image": "images/lustya-lupy.jpg"
+    },
+    {
+        "articul": "0004",
+        "category": "honey",
+        "popular": true,
+        "name": "Мед з малиною",
+        "size": "400",
+        "price": "180",
+        "image": "images/honey.png"
+    },
+    {
+        "articul": "0005",
+        "category": "tea",
+        "popular": true,
+        "name": "Іван Чай з Мелісою",
+        "size": "250",
+        "price": "115",
+        "image": "images/ivan-melisa.jpg"
+    },
+    {
+        "articul": "0006",
+        "category": "herbs",
+        "name": "Меліса",
+        "size": "100",
+        "price": "250",
+        "image": "images/melisa.jpeg"
+    },
+
+    {
+        "articul": "0007",
+        "category": "herbs",
+        "name": "Ромашка",
+        "size": "120",
+        "price": "50",
+        "image": "images/romashka.jpg"
+    },
+
+    {
+        "articul": "0008",
+        "category": "honey",
+        "popular": true,
+        "name": "Мед з чорницею",
+        "size": "250",
+        "price": "120",
+        "image": "images/honey2.jpg"
+    },
+
+    {
+        "articul": "0009",
+        "category": "honey",
+        "name": "Мед з бергамотом",
+        "size": "250",
+        "price": "150",
+        "image": "images/honey3.jpg"
+    },
+    {
+        "articul": "0010",
+        "category": "tea",
+        "name": "Іван Чай з трояндою",
+        "size": "250",
+        "price": "180",
+        "image": "images/ivan-rose.jpg"
+    },
+    
+    {
+        "articul": "0011",
+        "category": "herbs",
+        "popular": true,
+        "name": "Календула",
+        "size": "120",
+        "price": "50",
+        "image": "images/calendula.jpg"
+    },
+    {
+        "articul": "0012",
+        "category": "herbs",
+        "popular": true,
+        "name": "Ехінацея",
+        "size": "100",
+        "price": "80",
+        "image": "images/ekhinatseja.jpg"
+    },
+    {
+        "articul": "0013",
+        "category": "herbs",
+        "popular": true,
+        "name": "Звіробій",
+        "size": "100",
+        "price": "110",
+        "image": "images/zvirobiy.jpg"
+    },
+    {
+        "articul": "0014",
+        "category": "tea",
+        "name": "Іван Чай з чебрецем",
+        "size": "250",
+        "price": "180",
+        "image": "images/ivan-chebrets.jpg"
+    },
+    {
+        "articul": "0015",
+        "category": "tea",
+        "name": "Іван Чай з малиною",
+        "size": "250",
+        "price": "155",
+        "image": "images/ivan-rose.jpg"
+    },
+    {
+        "articul": "0016",
+        "category": "tea",
+        "name": "Іван Чай з смородиною",
+        "size": "250",
+        "price": "150",
+        "image": "images/ivan-lavanda.jpg"
+    },
+    {
+        "articul": "0017",
+        "category": "honey",
+        "name": "Мед з смородиною",
+        "size": "250",
+        "price": "180",
+        "image": "images/honey4.jpg"
+    },
+    {
+        "articul": "0018",
+        "category": "honey",
+        "name": "Мед з малиною",
+        "size": "250",
+        "price": "180",
+        "image": "images/honey2.jpg"
+    },
+    {
+        "articul": "0019",
+        "category": "honey",
+        "name": "Мед з лимоном",
+        "size": "250",
+        "price": "180",
+        "image": "images/honey6.jpg"
+    },
+    {
+        "articul": "0020",
+        "category": "honey",
+        "popular": true,
+        "name": "Мед з ромашкою",
+        "size": "250",
+        "price": "180",
+        "image": "images/honey4.jpg"
+    },
+    {
+        "articul": "0021",
+        "category": "tea",
+        "name": "Іван Чай з лимоном",
+        "size": "250",
+        "price": "155",
+        "image": "images/ivan-chai.webp"
+    },
+    {
+        "articul": "0022",
+        "category": "tea",
+        "name": "Іван Чай з ромашкою",
+        "size": "250",
+        "price": "168",
+        "image": "images/ivan-lavanda.jpg"
+    },
+    {
+        "articul": "0023",
+        "category": "tea",
+        "name": "Іван Чай з мятою",
+        "size": "250",
+        "price": "154",
+        "image": "images/ivan-melisa.jpg"
+    },
+    {
+        "articul": "0024",
+        "category": "honey",
+        "name": "Мед з імбиром",
+        "size": "250",
+        "price": "210",
+        "image": "images/honey5.jpg"
+    },
+    {
+        "articul": "0025",
+        "category": "honey",
+        "name": "Мед з яблуком",
+        "size": "250",
+        "price": "210",
+        "image": "images/jam.jpg"
+    },
+    {
+        "articul": "0026",
+        "category": "honey",
+        "name": "Мед з корицею",
+        "size": "250",
+        "price": "205",
+        "image": "images/honey6.jpg"
+    },
+    {
+        "articul": "0027",
+        "category": "herbs",
+        "name": "М'ята",
+        "size": "100",
+        "price": "50",
+        "image": "images/mint.webp"
+    },
+    {
+        "articul": "0028",
+        "category": "herbs",
+        "name": "Шавлія",
+        "size": "150",
+        "price": "120",
+        "image": "images/shavliya.jpg"
+    },
+    {
+        "articul": "0029",
+        "category": "herbs",
+        "name": "Розмарин",
+        "size": "130",
+        "price": "75",
+        "image": "images/rozmarin.jpeg"
+    },
+    {
+        "articul": "0030",
+        "category": "herbs",
+        "name": "Чебрець",
+        "size": "120",
+        "price": "85",
+        "image": "images/cebrec.jpeg"
+    },
+    {
+        "articul": "0031",
+        "category": "tinctures",
+        "name": "Настоянка з Чорниці",
+        "size": "300",
+        "price": "250",
+        "image": "images/tincture5.jpg"
+    },
+    {
+        "articul": "0032",
+        "category": "tinctures",
+        "name": "Настоянка з Бузини",
+        "size": "300",
+        "price": "245",
+        "image": "images/tincture1.jpg"
+    },
+    {
+        "articul": "0033",
+        "category": "tinctures",
+        "name": "Настоянка з Ялівцевих Ягід",
+        "size": "300",
+        "price": "240",
+        "image": "images/tincture2.jpg"
+    },
+    {
+        "articul": "0034",
+        "category": "tinctures",
+        "name": "Настоянка з Горобини",
+        "size": "300",
+        "price": "240",
+        "image": "images/tincture4.jpg"
+    },
+    {
+        "articul": "0035",
+        "category": "tinctures",
+        "popular": true,
+        "name": "Настоянка з Карпатських Трав",
+        "size": "350",
+        "price": "270",
+        "image": "images/tincture9.jpg"
+    },
+    {
+        "articul": "0036",
+        "category": "tinctures",
+        "name": "Настоянка з Дикої Малини",
+        "size": "350",
+        "price": "270",
+        "image": "images/tincture6.jpg"
+    },
+    {
+        "articul": "0037",
+        "category": "tinctures",
+        "name": "Настоянка з Глоду",
+        "size": "350",
+        "price": "270",
+        "image": "images/tincture7.jpg"
+    },
+    {
+        "articul": "0038",
+        "category": "tinctures",
+        "name": "Настоянка з Лісової Суниці",
+        "size": "350",
+        "price": "270",
+        "image": "images/tincture9.jpg"
+    },
+    {
+        "articul": "0039",
+        "category": "tinctures",
+        "popular": true,
+        "name": "Настоянка з Соснових Голок",
+        "size": "350",
+        "price": "270",
+        "image": "images/tincturepine.jpg"
+    },
+    {
+        "articul": "0040",
+        "category": "tinctures",
+        "name": "Настоянка з Ожини",
+        "size": "350",
+        "price": "270",
+        "image": "images/tincture8.jpg"
+    },
+    {
+        "articul": "0041",
+        "category": "tinctures",
+        "name": "Настоянка з Шипшини",
+        "size": "350",
+        "price": "270",
+        "image": "images/tincture.jpg"
+    },
+    {
+        "articul": "0042",
+        "category": "tinctures",
+        "name": "Настоянка з Аґрусу",
+        "size": "350",
+        "price": "270",
+        "image": "images/tincture3.jpg"
+    }
+
+]

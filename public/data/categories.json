@@ -1,0 +1,18 @@
+[
+    {    
+        "value": "kratom",
+        "image": "images/ivan-chai.webp"
+    },
+    {       
+        "value": "tea",
+        "image": "images/honey.png"
+    },
+    {       
+        "value": "mushrooms",
+        "image": "images/calendula.jpg"
+    },
+    {        
+        "value": "bio",
+        "image": "images/tincture.jpg"
+    }
+]

@@ -1,0 +1,203 @@
+{
+    "headers": {
+        "categorySelect": "Choose category",
+        "popular": "Popular",
+        "about": "About us",
+        "contacts": "Contacts",
+        "catalog": "Catalog",
+        "cartHeader": "Goods in Cart",
+        "emptyCart": "Cart is empty"
+    },
+    "labels": {
+        "cost": "Cost",
+        "total": "Total",
+        "measureSize": "g.",
+        "currency": "$"
+    },
+    "categories": {
+        "tea": "tea",
+        "honey": "honey",
+        "herbs": "herbs",
+        "tinctures": "tinctures"
+    },
+    "buttons": {
+        "buy": "To cart",
+        "submit": "Submit",
+        "home": "Home"
+    },
+    "text": {
+        "about": "Welcome to our online store \"Carpathian Herbs\"! We specialize in selling natural products from the heart of the Carpathians. In our assortment, you will find a variety of herbs, honey, teas, and tinctures, all lovingly crafted and carefully gathered from ecologically clean regions.\n\nWe believe that the best remedies for health come from nature. That's why we offer only the highest quality products that retain their beneficial properties and bring joy and health to our customers. Our store combines traditional knowledge with modern technologies to ensure the highest standard of quality."
+    },
+    "goods": {
+          
+        "0001": {
+            "name": "Ivan Tea",
+            "description": "Traditional Ukrainian tea made from fermented Ivan tea leaves. It has a mild taste and calming effect, perfect for evening tea."
+        },
+        "0002": {
+            "name": "Ivan Tea with Lavender",
+            "description": "Ivan tea with added lavender for a calming effect. Helps relieve stress and tension, promoting healthy sleep."
+        },
+        "0003": {
+            "name": "Linden Leaves",
+            "description": "Linden tea with a gentle aroma and soothing effect. Perfect for relaxation after a long day."
+        },
+        "0004": {
+            "name": "Honey with Raspberry",
+            "description": "Sweet honey with added raspberry for enhanced flavor. Rich in vitamins, ideal for desserts and drinks."
+        },
+        "0005": {
+            "name": "Ivan Tea with Lemon Balm",
+            "description": "Ivan tea with lemon balm for relaxation and calm. Has a mild lemon scent, helps relieve nervous tension."
+        },
+        "0006": {
+            "name": "Lemon Balm",
+            "description": "Herbal tea with lemon balm to relieve stress. Promotes mood improvement and overall health."
+        },
+        "0007": {
+            "name": "Chamomile",
+            "description": "Classic chamomile tea to relieve tension. Has anti-inflammatory properties and helps with insomnia."
+        },
+        "0008": {
+            "name": "Honey with Blueberry",
+            "description": "Honey with natural blueberry to boost immunity. Perfectly pairs with tea, toast, or yogurt."
+        },
+        "0009": {
+            "name": "Honey with Bergamot",
+            "description": "Honey with bergamot extract for a refined taste. Ideal for gourmets and tea lovers with a unique aroma."
+        },
+        "0010": {
+            "name": "Ivan Tea with Rose",
+            "description": "Ivan tea with rose aroma for a romantic mood. Has a delicate floral taste, perfect for special moments."
+        },
+        "0011": {
+            "name": "Calendula",
+            "description": "Calendula tea with anti-inflammatory properties. Supports skin health and overall well-being."
+        },
+        "0012": {
+            "name": "Echinacea",
+            "description": "Echinacea to support the immune system. Has antiseptic properties and helps fight colds."
+        },
+        "0013": {
+            "name": "St. John's Wort",
+            "description": "St. John's Wort tea to improve mood. Helps relieve stress, boosts mood, and promotes overall health."
+        },
+        "0014": {
+            "name": "Ivan Tea with Thyme",
+            "description": "Ivan tea with added thyme for vitality. Has a pronounced herbal taste and beneficial properties."
+        },
+        "0015": {
+            "name": "Ivan Tea with Raspberry",
+            "description": "Ivan tea with raspberry aroma for a sweet taste. Perfect for fans of fruity teas."
+        },
+        "0016": {
+            "name": "Ivan Tea with Black Currant",
+            "description": "Ivan tea with added black currant for freshness. Rich in vitamins and beneficial nutrients."
+        },
+        "0017": {
+            "name": "Honey with Black Currant",
+            "description": "Honey with natural black currant for enhanced flavor. Perfectly pairs with tea, yogurt, or toast."
+        },
+        "0018": {
+            "name": "Honey with Raspberry",
+            "description": "Sweet honey with added raspberry for enhanced flavor. Rich in vitamins, ideal for desserts and drinks."
+        },
+        "0019": {
+            "name": "Honey with Lemon",
+            "description": "Honey with lemon extract for a fresh taste. Perfect for tea or as an addition to desserts."
+        },
+        "0020": {
+            "name": "Honey with Chamomile",
+            "description": "Honey with added chamomile for a calming effect. Suitable for evening tea and stress relief."
+        },
+        "0021": {
+            "name": "Ivan Tea with Lemon",
+            "description": "Ivan tea with lemon aroma for freshness. Has a pronounced citrus taste that refreshes and invigorates."
+        },
+        "0022": {
+            "name": "Ivan Tea with Chamomile",
+            "description": "Ivan tea with added chamomile for a calming effect. Perfect for evening tea and stress relief."
+        },
+        "0023": {
+            "name": "Ivan Tea with Mint",
+            "description": "Ivan tea with mint for a fresh taste. Has a refreshing effect, promotes digestion, and overall well-being."
+        },
+        "0024": {
+            "name": "Honey with Ginger",
+            "description": "Honey with ginger for a spicy kick. Boosts immunity and adds a unique flavor to teas and desserts."
+        },
+        "0025": {
+            "name": "Honey with Apple",
+            "description": "Sweet honey with natural apple flavor. Perfect for a healthy snack or adding to your favorite tea."
+        },
+        "0026": {
+            "name": "Honey with Cinnamon",
+            "description": "Honey with a touch of cinnamon. Adds a warm, spicy flavor to teas and desserts, perfect for autumn."
+        },
+        "0027": {
+            "name": "Mint",
+            "description": "Fresh mint leaves for a refreshing herbal tea. Helps with digestion and has a soothing effect."
+        },
+        "0028": {
+            "name": "Sage",
+            "description": "Sage herbal tea with a strong, earthy flavor. Known for its anti-inflammatory and antioxidant properties."
+        },
+        "0029": {
+            "name": "Rosemary",
+            "description": "Rosemary tea with a pine-like aroma. Enhances memory and concentration, and supports overall well-being."
+        },
+        "0030": {
+            "name": "Thyme",
+            "description": "Thyme herbal tea with a savory flavor. Promotes respiratory health and supports the immune system."
+        },
+        "0031": {
+            "name": "Bilberry Tincture",
+            "description": "Bilberry tincture made from wild Carpathian berries. Rich in antioxidants, supports vision and overall health."
+        },
+        "0032": {
+            "name": "Elderberry Tincture",
+            "description": "Elderberry tincture to boost immunity. Made from hand-picked elderberries from the Carpathians."
+        },
+        "0033": {
+            "name": "Juniper Berry Tincture",
+            "description": "Juniper berry tincture with a unique, aromatic flavor. Known for its detoxifying properties and digestive support."
+        },
+        "0034": {
+            "name": "Rowan Berry Tincture",
+            "description": "Rowan berry tincture rich in vitamins. Supports cardiovascular health and overall well-being."
+        },
+        "0035": {
+            "name": "Carpathian Herb Tincture",
+            "description": "A blend of Carpathian herbs in a tincture form. Promotes relaxation and overall health."
+        },
+        "0036": {
+            "name": "Wild Raspberry Tincture",
+            "description": "Wild raspberry tincture with a sweet, fruity flavor. Supports immune health and adds a burst of flavor."
+        },
+        "0037": {
+            "name": "Hawthorn Tincture",
+            "description": "Hawthorn tincture for heart health. Made from wild Carpathian hawthorn berries."
+        },
+        "0038": {
+            "name": "Wild Strawberry Tincture",
+            "description": "Wild strawberry tincture with a rich, sweet taste. Promotes digestive health and overall well-being."
+        },
+        "0039": {
+            "name": "Carpathian Pine Needle Tincture",
+            "description": "Pine needle tincture with a refreshing, forest-like flavor. Known for its respiratory benefits and immune support."
+        },
+        "0040": {
+            "name": "Blackberry Tincture",
+            "description": "Blackberry tincture with a deep, rich flavor. Supports immune health and overall wellness."
+        },
+        "0041": {
+            "name": "Rosehip Tincture",
+            "description": "Rosehip tincture rich in vitamin C. Supports skin health and boosts immunity."
+        },
+        "0042": {
+            "name": "Gooseberry Tincture",
+            "description": "Gooseberry tincture with a tart, refreshing flavor. Promotes digestive health and overall well-being."
+        }
+
+    }     
+}
