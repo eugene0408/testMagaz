@@ -27,12 +27,14 @@ const GoodDescrBtn = ({articul}) => {
   const [linkIsActive, setLinkIsActive] = useState(false)
 
   useEffect(() => {
-    if(cart[articul] > 0 ) {
+    if(cart[articul]) {
       setLinkIsActive(true)
+    }else {
+      setLinkIsActive(false)
     }
-  }, []);
+  }, [articul]);
 
-  const buttonHandler = (e) => {
+  const addButtonHandler = (e) => {
     dispatch(addToCart({id: [e.currentTarget.value]}));
     setLinkIsActive(true);
   };
@@ -54,7 +56,7 @@ const GoodDescrBtn = ({articul}) => {
 
         <CounterBtnRight
           value={articul}
-          onClick={(e) => dispatch(addToCart({id: [e.currentTarget.value]}))}
+          onClick={(e) => addButtonHandler(e)}
         > 
           + 
         </CounterBtnRight>
@@ -64,7 +66,7 @@ const GoodDescrBtn = ({articul}) => {
       { !linkIsActive && 
         <Button
           value={articul}
-          onClick={(e) => buttonHandler(e)}
+          onClick={(e) => addButtonHandler(e)}
         >
           {t(`buttons.addToCart`)}
         </Button>

@@ -12,8 +12,10 @@ export const Counter = styled.div`
     align-items: center;
     justify-content: center; 
     border-radius: 10px;
-    border: 1px solid var(--text-col);
+    border: none;
     height: 100%;
+    box-shadow: var(--card-shadow);
+    background-color: #ffffff;
 `
 
 const CounterBtn = styled.button`
@@ -40,7 +42,7 @@ export const CounterValue = styled.div`
     align-items: center;
     justify-content: center; 
     font-size: 16px;
-    color: var(--text-col);
+    color: #000;
     width: 2.5em;
 `
 
