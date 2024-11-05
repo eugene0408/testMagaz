@@ -39,6 +39,13 @@ const GoodDescrBtn = ({articul}) => {
     setLinkIsActive(true);
   };
 
+  const linkStyles = {
+    position: "absolute", 
+    top: 0, 
+    left: 0,
+    width: "100%", 
+    height: "100%"
+  }
 
   return (
     <Wrapper>
@@ -73,11 +80,13 @@ const GoodDescrBtn = ({articul}) => {
       }
 
       { linkIsActive && 
-        <Link to={'/cart'}>
           <Button>
-          {t(`buttons.toCart`)}
+            <Link to={'/cart'} style={linkStyles}>
+              <div>
+                {t(`buttons.toCart`)}
+              </div>
+            </Link>
           </Button>
-        </Link>
       }
 
 
