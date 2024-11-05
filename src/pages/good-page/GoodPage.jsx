@@ -19,6 +19,7 @@ import {
 } from './GoodPage.style.js'
 import { Col, Container, Row } from 'react-grid-system';
 import {goodsGrid, GoodCol} from '../gridSettings';
+import GoodDescrBtn from '../../components/GoodDescrBtn/GoodDescrBtn.jsx';
 
 
 const GoodPage = () => {
@@ -85,9 +86,13 @@ const GoodPage = () => {
 
 					<Col xs={12}>
 						<ButtonContainer>
-							<AddToCartBtn
+							{/* <AddToCartBtn
 								articul={goodId}
 								btnSize={'large'}
+							/> */}
+
+							<GoodDescrBtn
+								articul={goodId}
 							/>
 						</ButtonContainer>
 					</Col>

@@ -35,7 +35,6 @@ const Layout = ()=> {
     const theme = useSelector(selectTheme);
 
 
-
     const cartAmount = () => {
         let amount = 0;
         for(let num in cart){
