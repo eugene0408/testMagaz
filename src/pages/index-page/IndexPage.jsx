@@ -29,7 +29,7 @@ import {
 } from './IndexPage.styles';
 
 const IndexPage = () => {
-  const {t} = useTranslation();
+  const {t} = useTranslation(['common', 'tgoods']);
 
   const categories = useSelector(selectCategoriesList)
   const goods = useSelector(selectGoodsList)
@@ -44,7 +44,7 @@ const IndexPage = () => {
       <PageContainer>
         <Container>
           <SectionHeader>
-            {t(`headers.categorySelect`)}
+            {t(`common:headers.categorySelect`)}
           </SectionHeader>
 
           {categoriesStatus === 'loading' && 
@@ -76,7 +76,7 @@ const IndexPage = () => {
 
 
           <SectionHeader>
-            {t(`headers.popular`)}
+            {t(`common:headers.popular`)}
           </SectionHeader>
 
 
@@ -98,7 +98,7 @@ const IndexPage = () => {
                     {...goodsGrid}
                   >
                     <GoodCard      
-                      title={t(`goods.${good.articul}.name`)}
+                      title={t(`tgoods:${good.articul}.name`)}
                       image={good.image}
                       articul={good.articul}
                       price={good.price}
@@ -113,7 +113,7 @@ const IndexPage = () => {
           
 
           <SectionHeader>
-            {t(`headers.about`)}
+            {t(`common:headers.about`)}
           </SectionHeader>
 
           <Row align='center'>
@@ -129,7 +129,7 @@ const IndexPage = () => {
               order={{xs: 1, md: 2}}
             >
               <AboutText>
-                {t(`text.about`)}
+                {t(`common:text.about`)}
               </AboutText>
             </Col>
           </Row>

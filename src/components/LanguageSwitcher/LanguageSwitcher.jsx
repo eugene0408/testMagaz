@@ -29,9 +29,9 @@ const LanguageSwitcher = () => {
 
         {!isOpen && (
             <Button onClick={toggleDropdown}>
-                {selectedLanguage === 'en' 
-                  ? <IconWrapper> <UsFlagIcon/> EN </IconWrapper>
-                  : <IconWrapper> <UkraineFlagIcon/> UK </IconWrapper>
+                {selectedLanguage === 'uk' 
+                  ? <IconWrapper> <UkraineFlagIcon/> UK </IconWrapper>
+                  : <IconWrapper>  RU </IconWrapper>
                 }
             </Button>
         )}
@@ -39,8 +39,8 @@ const LanguageSwitcher = () => {
 
         {isOpen && (
             <>
-             <Button onClick={() => changeLanguage('en')}>
-                <IconWrapper> <UsFlagIcon/> EN </IconWrapper>
+             <Button onClick={() => changeLanguage('ru')}>
+                <IconWrapper> RU </IconWrapper>
              </Button>
              <Button onClick={() => changeLanguage('uk')}>
                 <IconWrapper> <UkraineFlagIcon/> UK </IconWrapper>

@@ -25,7 +25,7 @@ const GoodCard = ({
     articul
 }) => {
 
-    const {t} = useTranslation();
+    const {t} = useTranslation('common');
 
     return (
 

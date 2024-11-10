@@ -8,15 +8,17 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    supportedLngs: ['en', 'uk'],
-    fallbackLng: 'en',
+    supportedLngs: ['ru', 'uk'],
+    fallbackLng: 'uk',
     detection: {
       order: ['queryString', 'cookie'],
       caches: ['cookie'],
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
+    ns: ['common', 'tgoods', 'desctiption'],
+    defaultNS: 'common',
     react: {
       useSuspense: false,
     },

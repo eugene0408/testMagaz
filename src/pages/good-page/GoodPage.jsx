@@ -20,10 +20,11 @@ import {
 import { Col, Container, Row } from 'react-grid-system';
 import {goodsGrid, GoodCol} from '../gridSettings';
 import GoodDescrBtn from '../../components/GoodDescrBtn/GoodDescrBtn.jsx';
+import KratomDescr from '../../components/ExtendedDescr/KratomDescr.jsx';
 
 
 const GoodPage = () => {
-	const {t} = useTranslation();
+	const {t} = useTranslation('[tgoods, common]');
 
 	const {goodId} = useParams();
 	const goods = useSelector(state => state.goods.goods)
@@ -63,17 +64,17 @@ const GoodPage = () => {
 						offset={{md: 2, lg: 3}}
 					>
 						<GoodTitle>
-							{t(`goods.${good.articul}.name`)}
+							{t(`tgoods:${good.articul}.name`)}
 						</GoodTitle>
 
 						<GoodDescription>
-							{t(`goods.${good.articul}.description`)}
+							{t(`tgoods:${good.articul}.description`)}
 						</GoodDescription>
 
 						<GoodPriceWrapper>
 							<GoodSize>
 								{good.size}
-								<span>{t(`labels.measureSize`)}</span>
+								<span>{t(`common:labels.measureSize`)}</span>
 							</GoodSize>
 							<GoodPrice>
 								{good.price}
@@ -99,9 +100,9 @@ const GoodPage = () => {
 				{/* ============= Similar Goods ================*/}
 				</Row>	
 				{similarGoods().length > 0 &&
-					<Row justify='start' style={{marginTop: '4rem'}}>
+					<Row justify='center' style={{marginTop: '4rem'}}>
 						<Col xs={12}>			
-							<Header>Популярні товари</Header>
+							<Header>{t(`common:headers.popular`)}</Header>
 						</Col>
 						{similarGoods().map(good => (
 							<GoodCol
@@ -109,7 +110,7 @@ const GoodPage = () => {
 								{...goodsGrid}
 							>
 								<GoodCard      
-								title={t(`goods.${good.articul}.name`)}
+								title={t(`tgoods:${good.articul}.name`)}
 								image={good.image}
 								articul={good.articul}
 								price={good.price}
@@ -120,12 +121,18 @@ const GoodPage = () => {
 						}
 					</Row>
 				}
+				{/* ================= Extended description =============== */}
+				{good.category === 'kratom' &&  <KratomDescr />}
 
-				{/* ============= Categories ================*/}
+
+
+
+
+				{/* ======================= Categories ==========================*/}
 				<Row justify='center' style={{marginTop: "5rem"}}>
 
 					<Col xs={12}>			
-						<Header>Категорії</Header>
+						<Header>{t(`common:headers.categories`)}</Header>
 					</Col>
 
 					{

@@ -11,13 +11,20 @@ import { PageContainer } from '../pages.style'
 import {Button} from '../../components/Button.style'
 import { 
     ButtonWrapper, 
-    Input, 
+    StyledField, 
     Label,
     Header,
     Select,
     Option,
-    CityListWrapper
+    CityListWrapper,
+    ErrorText
 } from './FormPage.style'
+import { 
+    Formik, 
+    Form, 
+    ErrorMessage 
+} from 'formik'
+import * as Yup from 'yup';
 
 
 const FormPage = () => {
@@ -26,7 +33,7 @@ const FormPage = () => {
 
     const [formData, setFormData] = useState({
         name: '',
-        secondName: '',
+        surname: '',
         phone: '',
         adress: ''
     })
@@ -116,9 +123,9 @@ const FormPage = () => {
         fetchWarehouses(city.Ref);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (values, {resetForm, setSubmitting}) => {
 
-        e.preventDefault();
+        // e.preventDefault();
 
         const data = new FormData();
         data.append('formData[name]', formData.name);
@@ -132,13 +139,27 @@ const FormPage = () => {
         // Send data to tg
         axios.post('https://erikshop.local/core/send-to-telegram.php', data)
             .then(response => {
-                alert('Успішно надіслано')
-                
+                alert('Успішно надіслано');
+                resetForm()
+                setSubmitting(false)
             })
             .catch(error => {
                 console.error('Sending error', error)
             })
     };
+
+
+    const validationSchema = Yup.object({
+        name: Yup.string()
+          .min(2, 'Ім’я має містити щонайменше 2 символи')
+          .required("Ім'я є обов'язковим"),
+        surname: Yup.string()
+          .min(2, 'Прізвище має містити щонайменше 2 символи')
+          .required("Прізвище є обов'язковим"),
+        phone: Yup.string()
+          .matches(/^[0-9]{10}$/, 'Номер телефону має містити 10 цифр')
+          .required("Номер телефону є обов'язковим"),
+      });
 
 
   return (
@@ -148,88 +169,109 @@ const FormPage = () => {
                 <Col
                     xs={12} md={6} xl={4}
                 >
-                <form method= "post" onSubmit={handleSubmit}>
-                    <Header>Контактні дані</Header>
-                    <Label>
-                        Імя
-                    </Label>
-                    <Input 
-                        type={'text'}
-                        name="name"
-                        onChange={handleInputChange}
-                    />
-           
-                    <Label>
-                        Прізвище
-                    </Label>
-                    <Input
-                        type={'text'}
-                        name='surname'
-                        onChange={handleInputChange}
-                     />
-               
-                    <Label>
-                        Номер телефону
-                    </Label>
-                    <Input
-                        type={'tel'}
-                        name='phone'
-                        onChange={handleInputChange}
-                     />
-                    <Header>Доставка</Header>
-                    <Label>
-                        Місто / село
-                    
-                    <Input
-                        type={'text'}
-                        name='city'
-                        onChange={(e) => setCityQuery(e.currentTarget.value)}
-                        placeholder='Почніть вводити назву міста'
-                        value={cityQuery}
-                     />
-
-                    {cities.length > 0 && (
-                        <CityListWrapper>
-                            {cities.map((city) => (
-                            <li
-                                key={city.Ref}
-                                onClick={() => handleCitySelect(city)}
-                                style={{ cursor: 'pointer', padding: '5px' }}
-                            >
-                                {city.Description}
-                            </li>
-                            ))}
-                        </CityListWrapper>
-                        )}
-                    </Label>
-
-                    {selectedCity && (
+                <Formik
+                    initialValues={{ name: '', surname: '', phone: '' }}
+                    validationSchema={validationSchema}
+                    onSubmit={handleSubmit}
+                >
+                    {({ handleChange, isSubmitting }) => (
+                        <Form method= "post" >
+                        {/* ========== Personal data ============== */}
+                        <Header>Контактні дані</Header>
                         <Label>
-                            Відділення:
-                            <Select 
-                                name='warehouse'
-                                onChange={(e) => setSelectedWarehouse(e.currentTarget.value)}
-                            >
-                                {warehouses.map((warehouse) => (
-                                <Option 
-                                    key={warehouse.Ref} 
-                                    value={warehouse.Description}
-                                >
-                                    {warehouse.Description}
-                                </Option>
-                                ))}
-                            </Select>
+                            Імя 
                         </Label>
-                    )}
+                        <StyledField 
+                            type={'text'}
+                            name="name"
+                            onChange={(e) => {
+                                handleChange(e)
+                                handleInputChange(e)
+                            }}
+                        />
+                        <ErrorMessage name="name" component={ErrorText} />
+                        
+                        <Label>
+                            Прізвище
+                        </Label>
+                        <StyledField
+                            type={'text'}
+                            name='surname'
+                            onChange={(e) => {
+                                handleChange(e)
+                                handleInputChange(e)
+                            }}
+                        />
+                        <ErrorMessage name="surname" component={ErrorText} />
+                
+                        <Label>
+                            Номер телефону
+                        </Label>
+                        <StyledField
+                            type={'tel'}
+                            name='phone'
+                            onChange={(e) => {
+                                handleChange(e)
+                                handleInputChange(e)
+                            }}
+                        />
+                        <ErrorMessage name="phone" component={ErrorText} />
 
+                        {/* ============= Nova Post Delivery data ================= */}
+                        <Header>Доставка</Header>
+                        <Label>
+                            Місто / село
+                        
+                        <StyledField
+                            type={'text'}
+                            name='city'
+                            onChange={(e) => setCityQuery(e.currentTarget.value)}
+                            placeholder='Почніть вводити назву міста'
+                            value={cityQuery}
+                        />
 
+                        {cities.length > 0 && (
+                            <CityListWrapper>
+                                {cities.map((city) => (
+                                <li
+                                    key={city.Ref}
+                                    onClick={() => handleCitySelect(city)}
+                                    style={{ cursor: 'pointer', padding: '5px' }}
+                                >
+                                    {city.Description}
+                                </li>
+                                ))}
+                            </CityListWrapper>
+                            )}
+                        </Label>
 
-                    <ButtonWrapper>
-                        <Button type='submit'>
-                            Оформити замовлення
-                        </Button>
-                    </ButtonWrapper>
-                    </form>
+                        {selectedCity && (
+                            <Label>
+                                Відділення:
+                                <Select 
+                                    name='warehouse'
+                                    onChange={(e) => setSelectedWarehouse(e.currentTarget.value)}
+                                >
+                                    {warehouses.map((warehouse) => (
+                                    <Option 
+                                        key={warehouse.Ref} 
+                                        value={warehouse.Description}
+                                    >
+                                        {warehouse.Description}
+                                    </Option>
+                                    ))}
+                                </Select>
+                            </Label>
+                        )}
+
+                        <ButtonWrapper>
+                            <Button type='submit'>
+                                Оформити замовлення
+                            </Button>
+                        </ButtonWrapper>
+                        </Form>
+                    )}                   
+                    </Formik>
                 </Col>
             </Row>
         </Container>

@@ -15,6 +15,7 @@
         "articul": "0002",
         "category": "kratom", 
         "name": "Чай Кратом Thai Green Зелений",
+        "popular": true,
         "size": "100",
         "price": "510",
         "image": "images/ivan-lavanda.jpg",
@@ -31,7 +32,6 @@
     {
         "articul": "0004",
         "category": "honey",
-        "popular": true,
         "name": "Мед з малиною",
         "size": "400",
         "price": "180",

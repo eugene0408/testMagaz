@@ -18,7 +18,7 @@ import {
 } from './CategoryPage.styles'
 
 const CategoryPage = () => {
-    const {t} = useTranslation();
+    const {t} = useTranslation(['common', 'tgoods']);
     const filteredGoods = useSelector(selectGoodsByCategory)
     const curCategory = useSelector(selectCurCategory)
 
@@ -27,7 +27,7 @@ const CategoryPage = () => {
         <Header>
             <MenuIcons name={curCategory}/>
             <HeaderTitle>
-                {t(`categories.${curCategory}`)}
+                {t(`common:categories.${curCategory}`)}
             </HeaderTitle>
         </Header>
 
@@ -42,7 +42,7 @@ const CategoryPage = () => {
                 {...goodsGrid}
               >
                 <GoodCard      
-                  title={t(`goods.${good.articul}.name`)}
+                  title={t(`tgoods:${good.articul}.name`)}
                   image={good.image}
                   articul={good.articul}
                   price={good.price}

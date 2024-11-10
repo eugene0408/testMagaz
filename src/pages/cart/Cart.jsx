@@ -22,7 +22,7 @@ import {
 
 
 const Cart = () => {
-  const {t} = useTranslation();
+  const {t} = useTranslation(['common', 'tgoods']);
   const cart = useSelector(selectCart);
   const goodsInCart = useSelector(selectGoodsInCart)
   const {convertCurrency} = useCurrencyConverter()
@@ -45,7 +45,7 @@ const Cart = () => {
     {goodsInCart.length >= 1 &&
       <>
         <CartHeader>
-          {t(`headers.cartHeader`)}
+          {t(`common:headers.cartHeader`)}
         </CartHeader>
 
         <Container>
@@ -58,7 +58,7 @@ const Cart = () => {
                 >
                   <CartCard 
                     image={good.image}
-                    title={t(`goods.${good.articul}.name`)}
+                    title={t(`tgoods:${good.articul}.name`)}
                     price={good.price}
                     articul={good.articul}
                     amount={cart[good.articul]}
@@ -75,10 +75,10 @@ const Cart = () => {
               md={11} lg={10} xl={9}
             >
               <TotalWrapper>
-                <TotalLabel>{t(`labels.total`)}:</TotalLabel>
+                <TotalLabel>{t(`common:labels.total`)}:</TotalLabel>
                 <TotalValue>
                   {totalCurrency}
-                  <span>{t(`labels.currency`)}</span>
+                  <span>₴</span>
                 </TotalValue>
               </TotalWrapper>
             </Col>
@@ -89,7 +89,7 @@ const Cart = () => {
           <SubmitBtnWrapper>
             <Link to={'/form'}>
               <Button>
-                {t(`buttons.submit`)}
+                {t(`common:buttons.submit`)}
               </Button>
             </Link>
           </SubmitBtnWrapper>
@@ -99,7 +99,7 @@ const Cart = () => {
 
     {goodsInCart.length < 1 &&
       <EmptyCart
-        text={t(`headers.emptyCart`)}
+        text={t(`common:headers.emptyCart`)}
       />
     }
 

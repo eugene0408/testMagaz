@@ -1,4 +1,5 @@
 import styled, {css} from "styled-components";
+import { Field } from "formik";
 
 const inputStyles = css`
     width: 100%;
@@ -15,9 +16,11 @@ const inputStyles = css`
 export const Label = styled.label`
     font-size: var(--text-fz);
     color: var(--text-col);
+    position: relative;
+    width: 100%;
 `
 
-export const Input = styled.input`
+export const StyledField = styled(Field)`
     ${inputStyles}
 `
 
@@ -69,4 +72,10 @@ export const ButtonWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+`
+export const ErrorText = styled.div`
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-left: 10px;
 `
